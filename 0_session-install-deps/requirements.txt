@@ -1,0 +1,14 @@
+nemoguardrails
+langchain
+openai
+pypdf
+pinecone-client
+tiktoken
+streamlit
+asyncio
+async-timeout
+protobuf
+python-dotenv
+langchain-core
+langchain-cohere
+langchain-pinecone
