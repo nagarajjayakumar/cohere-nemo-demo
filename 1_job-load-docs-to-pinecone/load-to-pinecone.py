@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from utils.util import (load_environment_variables,
                         initialize_clients,
                         create_embeddings,
-                        create_pinecone_collection)
+                        create_pinecone_collection, process_pdf_files)
 
 
 # Initialize the logger
@@ -24,8 +24,8 @@ def main():
 
     index = create_pinecone_collection(pinecone_client, env_vars["pinecone_index"])
 
-    folder_path = '//docs'
-    # process_pdf_files(folder_path, embeddings, env_vars["pinecone_index"])
+    folder_path = '//docs/'
+    #process_pdf_files(folder_path, embeddings, env_vars["pinecone_index"])
     print("process pinecone index is completed !!! ")
 
 
