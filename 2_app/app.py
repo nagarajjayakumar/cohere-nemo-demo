@@ -1,8 +1,7 @@
-import streamlit as st
 import asyncio
 import os
 
-from langchain_core.documents import Document
+import streamlit as st
 
 
 def get_file_path(filename):
@@ -34,16 +33,12 @@ def initialize_app():
 
     # Now import nemoguardrails and other dependencies
     from nemoguardrails import RailsConfig
-    from langchain.chains.combine_documents import create_stuff_documents_chain
-    from langchain_cohere import ChatCohere
     from langchain_core.prompts import PromptTemplate
     from langchain_core.runnables import RunnablePassthrough
     from langchain_pinecone import Pinecone as LangchainPinecone
-    from nemoguardrails.integrations.langchain.runnable_rails import RunnableRails
     from nemoguardrails import LLMRails
     from langchain_core.output_parsers import StrOutputParser
 
-    from config import CohereEmbeddingModel
     from utils.util import (load_environment_variables,
                             initialize_clients,
                             create_embeddings,

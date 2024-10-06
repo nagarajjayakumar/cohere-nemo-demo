@@ -1,18 +1,14 @@
 import asyncio
 import os
-from langchain_core.documents import Document
-from langchain_core.messages import HumanMessage
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.runnables import RunnableBranch, RunnablePassthrough
-from nemoguardrails import LLMRails, RailsConfig
-from langchain.chains.combine_documents import create_stuff_documents_chain
+
 from langchain_cohere import ChatCohere
+from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
+from langchain_core.runnables import RunnablePassthrough
 from langchain_pinecone import Pinecone as LangchainPinecone
-from nemoguardrails.integrations.langchain.runnable_rails import RunnableRails
+from nemoguardrails import LLMRails, RailsConfig
+
 from config import CohereEmbeddingModel
-from nemoguardrails.actions import action
-import json
 from utils.util import (load_environment_variables,
                         initialize_clients,
                         create_embeddings,
