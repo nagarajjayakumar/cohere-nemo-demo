@@ -130,11 +130,12 @@ def initialize_app():
 # Initialize the app
 rag_rails = initialize_app()
 
-st.title('	:robot_face: :owl:  Chatbot with Guardrails')
+st.title('	:robot_face: :owl:  Cohere model knowledge assistant')
 st.caption(
     'This Streamlit application leverages Pinecone for Semantic Search, Langchain, Cohere and NVIDIA\'s Guardrails '
-    'to demonstrate how enterprise AI can be secure and governed. Update the guardrails configuration in 2_app/config.yml')
-prompt = st.text_input('Enter your prompt')
+    'to demonstrate how enterprise AI can be secure and governed.'
+    'Update the guardrails configuration based on your requirement')
+prompt = st.text_input('\n Enter your prompt')
 
 
 
