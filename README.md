@@ -62,6 +62,9 @@ This project implements an AI chatbot using Streamlit, leveraging Pinecone for S
    - The language model generates a response.
 3. The response is displayed to the user in the Streamlit interface.
 
+<h3> Demo </h3>
+<img src="assets/cohere-nemo-demo.gif" />
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
